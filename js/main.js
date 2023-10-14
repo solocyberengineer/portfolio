@@ -42,7 +42,7 @@ light.position.set(0,10,4)
 light.rotation.set(1,1,1)
 scene.add(light)
 
-loader.load( '../3d/evoIX.glb', function ( glb ) {
+loader.load( './3d/evoIX.glb', function ( glb ) {
     const obj =  glb.scene;
     obj.rotation.set(0,-1.7,0)
     camera.lookAt(obj.position)
