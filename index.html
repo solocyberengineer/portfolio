@@ -3,72 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title>My Portfolio</title>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+                    "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+                }
+            }
+        </script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#reachme">Reach me</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            
-            <section style="border: 3px solid green;padding: 10px;margin-bottom: 3rem;">
-                <h2>Rezaar Osman</h2>
-            </section>
-            <section style="border: 3px dotted blue;padding: 10px;">
-                <h2>About</h2>
-                <h4>Aspiring fullstack developer</h4>
-            </section>
-            <section>
-                <h2>Education</h2>
-            </section>
-            <section>
-                <h2>Skills</h2>
-            </section>
-            <section>
-                <h2>Testimonials</h2>
-            </section>
-            <section>
-                <h2>Projects</h2>
-            </section>
-            <section id="reachme">
-                <h2>Reach me</h2>
-                <form action="https://formspree.io/f/mqkvwprr" method="POST" return="false">
-                    <div>
-                        <label for="firstName">First Name</label>
-                        <input name="firstName" type="text" placeholder="First Name" required id="firstName"/>
-                    </div>
-                    <div>
-                        <label for="lastName">Last Name</label>
-                        <input name="lastName" type="text" placeholder="Last Name" required/>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input name="email" type="text" placeholder="Email Address" required id="email"/>
-                    </div>
-                    <div>
-                        <label for="emailMessage">Email Message</label>
-                        <textarea rows="10" cols="30" name="emailMessage" type="text" placeholder="Email Message" required id="emailMessage"></textarea>
-                    </div>
-                    <div>
-                        <!-- <input value="Send" type="submit" /> -->
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright &copy;2023</p>
-        </footer>
+        <center><h1 style="position:absolute;font-size: 60px;color: white;padding: 100px;">Welcome</h1></center>
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>
+
+<!--
+    footer:[
+        QUICK_LINKS:[
+            Project Links
+            Skills Show off(Pen-Testing, 3D Designing, Coding Languages)
+            Social Media
+            Contact
+        ]
+        -> copyright@2023
+        -> sitemap
+        -> site information
+    ]
+-->
