@@ -5,6 +5,8 @@ const loader = new GLTFLoader();
 
 // The Space
 const scene = new THREE.Scene();
+scene.background = new THREE.Color( 0x44aa55 );
+// scene.fog = new THREE.Fog( 0xffffff, 0.015, 100 );
 
 // The Camera/Viewpoint
 const camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -35,14 +37,14 @@ camera.position.set(4,4,10)
 camera.rotation.set(-0.5,0,0)
 
 
-
 const light = new THREE.DirectionalLight(0xffffff, 1)
 // const light = new THREE.AmbientLight( 0xffffff, 1 );
 light.position.set(0,10,4)
 light.rotation.set(1,1,1)
 scene.add(light)
 
-loader.load( './3d/evoIX.glb', function ( glb ) {
+
+loader.load( './3d_Objects/evoIX.glb', function ( glb ) {
     const obj =  glb.scene;
     obj.rotation.set(0,-1.7,0)
     camera.lookAt(obj.position)
