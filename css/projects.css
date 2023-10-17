@@ -1,27 +1,49 @@
+body {
+    background-color: lightseagreen;
+}
+
+::selection {
+    background-color: orangered;
+}
+
 #title {
+    cursor: pointer;
     position: absolute;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 60px;
+    /* left: 10%; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    left: 50%;
-    transform: translate(-50%,0);
-    color: yellow;
-    /* background: red; */
+    font-size: 6rem;
+    color: white;
+    /* overflow: hidden; */
+    display: inline-block;
 }
 
 #title::before {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 43%;
+    overflow: hidden;
+    font-size: 6rem;
+    color: #f60042;
+    display: inline;
     content: "MRBUD";
-    color: orange;
-    /* background: greenyellow; */
-    /* left: 50%; */
-    top: 4%;
-    left: 0%;
+    transition: ease 1s width;
 }
-#title::after {
-    position: absolute;
-    content: "MRBUD";
-    top: 8%;
-    left: 0%;
-    color: red;
+#title:hover::before {
+    width: 100%;
 }
+
+/* 
+sudo elements: content specific munipulation 
+    ::first-letter 
+    ::first-line 
+    ::selection
+
+sudo class: function or an event
+    :active 
+    :hover
+    :first-child
+    :last-child
+    :nth-child(even/odd)
+*/

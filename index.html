@@ -26,19 +26,26 @@
     <body>
         <section id="home">
             <nav>
-                <ul>
+                <ul style="position: absolute;left:0;top:0;background-color: black;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
                     <li><a href="">About Me</a></li>
                 </ul>
-                <ul style="float:right;">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Reviews</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Skills</a></li>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Skills</a></li>
                     <li><a href="./page/projects.html">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div id="aboutme">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus numquam consequuntur odio, adipisci illo debitis necessitatibus? Minus, suscipit! Voluptatum magni explicabo quae blanditiis officia impedit a repellat cumque deleniti!</p>
+                    <div>profile photo</div>
+                </div>
             </div>
         </section>
         <script type="module" src="./js/main.js"></script>
@@ -47,6 +54,14 @@
 </html>
 
 <!--
+    Rubric:
+        -> Minus 5 if you use semantic element.
+        -> Need to import a remote font(@import)
+        -> Profile photo has to be remote imported( attr loading = lazy )
+        -> :root in css to store variables
+        -> use text emphasis like bold, italics, etc
+        -> make sure you use Joels structure(header, nav, main, footer)
+
     Current Status: Available?Not-Available
     footer:[
         QUICK_LINKS:[
