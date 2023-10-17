@@ -1,0 +1,27 @@
+#title {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: yellow;
+    /* background: red; */
+}
+
+#title::before {
+    position: absolute;
+    content: "MRBUD";
+    color: orange;
+    /* background: greenyellow; */
+    /* left: 50%; */
+    top: 4%;
+    left: 0%;
+}
+#title::after {
+    position: absolute;
+    content: "MRBUD";
+    top: 8%;
+    left: 0%;
+    color: red;
+}
