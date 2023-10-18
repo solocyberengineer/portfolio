@@ -5,7 +5,8 @@ const loader = new GLTFLoader();
 
 // The Space
 const scene = new THREE.Scene();
-scene.background = new THREE.Color( 0x44aa55 );
+// scene.background = new THREE.Color( 0x44aa55 );
+scene.background = new THREE.Color( 0x50ff50 );
 // scene.fog = new THREE.Fog( 0xffffff, 0.015, 100 );
 
 // The Camera/Viewpoint
@@ -33,8 +34,8 @@ const cube = new THREE.Mesh( geometry, material );
 // scene.add( cube );
 
 // Positioning the camera on the z-axis
-camera.position.set(4,4,10)
-camera.rotation.set(-0.5,0,0)
+camera.position.set(0.06,0,0.1)
+// camera.rotation.set(-0.5,0,0)
 
 
 const light = new THREE.DirectionalLight(0xffffff, 1)
@@ -44,9 +45,9 @@ light.rotation.set(1,1,1)
 scene.add(light)
 
 
-loader.load( './3d_Objects/evoIX.glb', function ( glb ) {
+loader.load( './3d_Objects/DevRoom.glb', function ( glb ) {
     const obj =  glb.scene;
-    obj.rotation.set(0,-1.7,0)
+    obj.rotation.set(0,-0.5,0)
     camera.lookAt(obj.position)
     console.log(obj)
 	scene.add( obj );
@@ -56,8 +57,8 @@ loader.load( './3d_Objects/evoIX.glb', function ( glb ) {
 
 function animate() {
 	requestAnimationFrame( animate );
-    camera.rotation.x += 0.01
-    camera.position.z -= 0.01
+    // camera.rotation.x += 0.01
+    // camera.position.z -= 0.01
     camera.lookAt(0,0,0)
 	renderer.render( scene, camera );
 }

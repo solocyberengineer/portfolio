@@ -22,12 +22,18 @@
                 }
             }
         </script>
+        <!-- <script>
+            window.addEventListener("load", function() { 
+               alert('loading')
+            });
+        </script> -->
+        <script src="./js/ui.js" defer></script>
     </head>
     <body>
         <section id="home">
             <nav>
                 <ul style="position: absolute;left:0;top:0;background-color: black;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
-                    <li><a href="">About Me</a></li>
+                    <li><a href="#">About Me</a></li>
                 </ul>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -47,26 +53,30 @@
                     <div>profile photo</div>
                 </div>
             </div>
+            <div style="font-family: cursive;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);">
+                <h2 style="color:white;font-size: 4rem;margin-left:-40%;">Welcome.</h2><br>
+                <h2 style="color:white;font-weight: 900;font-size: 3rem;">Hi, I'am<br>Rezaar Osman<br>an aspiring Engineer</h2>
+            </div>
         </section>
         <script type="module" src="./js/main.js"></script>
-        <script type="module" src="./js/ui.js"></script>
     </body>
 </html>
 
 <!--
     Rubric:
-        -> Minus 5 if you use semantic element.
+        -> Minus 5 if you use semantic element(example: <center></center>).
         -> Need to import a remote font(@import)
         -> Profile photo has to be remote imported( attr loading = lazy )
         -> :root in css to store variables
         -> use text emphasis like bold, italics, etc
         -> make sure you use Joels structure(header, nav, main, footer)
+        -> Introduce yourself on the landing page
 
     Current Status: Available?Not-Available
     footer:[
         QUICK_LINKS:[
             Project Links
-            Skills Show off(Pen-Testing, 3D Designing, Coding Languages)
+            Skills Show-off(Pen-Testing, 3D Designing, Coding Languages)
             Social Media
             Contact
         ]

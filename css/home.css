@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap'); */
 
 :root {
     --carbon: #303030;
@@ -9,6 +9,7 @@
 #home {
     position: absolute;
     width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
 }
 
 #home nav {
@@ -24,7 +25,9 @@
     /* margin-left: 100px; */
 }
 
-
+/* :is(#home nav ul){
+    border: 1px solid red;
+} */
 
 #home nav ul li {
     text-align: center;
@@ -32,6 +35,7 @@
 }
 
 #home nav ul li a {
+    cursor: pointer;
     width: 100px;
     height: 70px;
     text-decoration: none;
@@ -56,6 +60,7 @@
 }
 
 #aboutme {
+    display: none;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -64,6 +69,7 @@
     border-top-right-radius: 90px;
     border-top-left-radius: 90px;
     box-shadow: 0px -1px 2px 1px rgba(0,0,0,0.2);
+    z-index: 1;
     background: linear-gradient(142deg, 
                 rgba(0,0,0,var(--shineAlpha)) 0%,
                  rgba(224,224,224,var(--shineAlpha)) 18%,
@@ -92,7 +98,7 @@
 
 .content {
     margin: 0 90px;
-    height: 80%;
+    height: 70%;
     padding: 10px;
     flex-flow: column;
 }
