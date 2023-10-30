@@ -35,9 +35,6 @@ body {
 }
 
 /* 
-
-grid-template-rows: auto minmax(1fr, 100%) auto;
-
 sudo elements: content specific munipulation 
     ::first-letter 
     ::first-line 

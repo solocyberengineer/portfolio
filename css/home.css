@@ -3,7 +3,7 @@
 :root {
     --carbon: #303030;
     --green: rgb(68,170,85);
-    --shineAlpha: 0.1;
+    --shineAlpha: 0.2;
 }
 
 #home {
@@ -65,7 +65,7 @@
     border-top-left-radius: 90px;
     box-shadow: 0px -1px 2px 1px rgba(0,0,0,0.2);
     background: linear-gradient(142deg, 
-                rgba(0,0,0,0.2) 0%,
+                rgba(0,0,0,var(--shineAlpha)) 0%,
                  rgba(224,224,224,var(--shineAlpha)) 18%,
                   rgba(241,241,241,var(--shineAlpha)) 21%,
                    rgba(252,252,252,var(--shineAlpha)) 23%,
@@ -92,7 +92,7 @@
 
 .content {
     margin: 0 90px;
-    height: 70%;
+    height: 80%;
     padding: 10px;
     flex-flow: column;
 }
@@ -127,12 +127,4 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#profilephoto {
-    background-image: url(../images/Rezaar.JPG);
-    background-position: 100% 0%;
-    background-size: cover;
-    color: transparent;
-    box-shadow: 0px 1px 2px 0px black;
 }
