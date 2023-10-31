@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./css/main.css"> -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="./css/home.css">
         <title>My Portfolio</title>
         <!-- <script type="importmap">
@@ -14,51 +17,63 @@
                 }
             }
         </script> -->
-        <script type="importmap">
+        <!-- <script type="importmap">
             {
                 "imports": {
                     "three": "./threejs/three.module.js",
                     "three/addons/": "./threejs/addons/"
                 }
             }
-        </script>
+        </script> -->
         <!-- <script>
             window.addEventListener("load", function() { 
                alert('loading')
             });
         </script> -->
-        <script src="./js/ui.js" defer></script>
     </head>
     <body>
-        <section id="home">
-            <nav>
-                <ul style="position: absolute;left:0;top:0;background-color: black;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
-                    <li><a href="#">About Me</a></li>
+        <div class="container-fluid p-3 bg-black whoami">
+            <h6 class="display-6 text-white text-center">Hi, I'am Rezaar Osman</h6>
+        </div>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent d-flex align-items-center">
+                <ul style="list-style: none;padding-left:0;margin-bottom:0;">
+                    <li class="nav-item"><a class="nav-link pii" href="#aboutme">About Me</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="./page/projects.html">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <!-- <a class="navbar-brand" href="#"><span></span></a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
-            <div id="aboutme">
-                <div class="title">
-                    <h2>About Me</h2>
+        </header>
+        <main>
+            <section class="py-4" id="home">
+                <!-- <h1>solo</h1> -->
+                <div class="container p-3 bg-black slideshow">
+                    <h1>Im a aspiring fullstack developer</h1>
                 </div>
-                <div class="content">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus numquam consequuntur odio, adipisci illo debitis necessitatibus? Minus, suscipit! Voluptatum magni explicabo quae blanditiis officia impedit a repellat cumque deleniti!</p>
-                    <div>profile photo</div>
+            </section>
+            <section class="container-fluid" id="aboutme">
+                <div class="row h-100">
+                    <div class="col"></div>
+                    <div class="col profileLayout">
+                        <div class="profileImage"></div>
+                    </div>
                 </div>
-            </div>
-            <div style="font-family: cursive;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);">
-                <h2 style="color:white;font-size: 4rem;margin-left:-40%;">Welcome.</h2><br>
-                <h2 style="color:white;font-weight: 900;font-size: 3rem;">Hi, I'am<br>Rezaar Osman<br>an aspiring Engineer</h2>
-            </div>
-        </section>
-        <script type="module" src="./js/main.js"></script>
+            </section>
+        </main>
+        <!-- <script type="module" src="./js/main.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
 
@@ -71,6 +86,9 @@
         -> use text emphasis like bold, italics, etc
         -> make sure you use Joels structure(header, nav, main, footer)
         -> Introduce yourself on the landing page
+
+    Addons:
+        -> add tooltips
 
     Current Status: Available?Not-Available
     footer:[
