@@ -47,29 +47,68 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="py-4" id="home">
+            <section class="py-4 container-fluid d-flex justify-content-center align-items-center" id="home">
                 <!-- <h1>solo</h1> -->
-                <div class="container p-3 bg-black slideshow">
-                    <h1>Im a aspiring fullstack developer</h1>
+                <div class="row container-fluid h-100 slideshow">
+                    <div class="col window1">
+                        <div class="container-fluid border border-2 border-success d-flex align-items-center justify-content-center flex-column" style="height: 50vh;background-color: black;">
+                            <h6 class="display-6 text-white fs-4">I'am a aspiring <span class="h4 d-block">Cyber Security Pen-Tester</span></h6>
+                        </div>
+                    </div>
+                    <div class="col window2">
+                        <div class="container-fluid border border-2 border-success d-flex align-items-center justify-content-center flex-column" style="height: 50vh;background-color: black;">
+                            <h6 class="display-6 text-white fs-4">I'am a aspiring <span class="h4 d-block">FullStack Developer</span></h6>
+                        </div>
+                    </div>
+                    <div class="col window3">
+                        <div class="container-fluid border border-2 border-success d-flex align-items-center justify-content-center flex-column" style="height: 50vh;background-color: black;">
+                            <h6 class="display-6 text-white fs-4">I'am a aspiring <span class="h4 d-block">Game Developer</span></h6>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="container-fluid" id="aboutme">
-                <div class="row h-100">
-                    <div class="col"></div>
+                <div class="row h-100 aboutLayout">
+                    <div class="col">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="htb_labs.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="htb_labs.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="htb_labs.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
                     <div class="col profileLayout">
                         <div class="profileImage"></div>
                     </div>
                 </div>
+            </section>
+            <section class="container-fluid" id="contact">
+                <div class="row"></div>
             </section>
         </main>
         <!-- <script type="module" src="./js/main.js"></script> -->

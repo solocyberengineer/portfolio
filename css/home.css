@@ -41,6 +41,7 @@ header {
 .navbar-collapse ul li a {
     border-radius: 0;
 }
+
 .nav-item {
     padding: 0;
     margin-inline: 4px;
@@ -73,33 +74,66 @@ section {
 }
 #home {
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)), url(https://i.postimg.cc/PfM0nHQM/Macbook-Pro.png); */
-    background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)), url(../htb.png);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../htb.png);
+    /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)); */
+    /* height: 100vh; */
     background-position: center;
     background-size: cover;
     filter: opacity(100%);
-    perspective: 1000px;
-
+    /* perspective: 2000px; */
 }
 .slideshow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateY(0deg);
-    width: calc(100px * 5);
-    height: calc(150px * 3);
-    background-color: black !important;
-    z-index: 10;
-    animation: rotate3d 10s infinite;
-    /* animation-delay: 5s; */
-    animation-timing-function:cubic-bezier(1, 1, 1, 1);
+    /* background-color: red; */
+    align-items: center;
+    /* perspective: 5000px; */
+    perspective-origin: 50% 30%;
 }
-.slideshow:hover {
-    /* transform: translate(-50%, -50%) rotateY(45deg); */
-    animation-play-state: running;
+[class*='window']{
+    transform: rotateY(0deg);
+}
+[class*='window'] div{
+    border-radius: 10px;
+    /* background-color: var(--green2); */
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5 ) ), url(../htb.png);
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid var(--green2); */
+}
+.window1 {
+    transform-origin: 100% 50%;
+    /* transform: rotateY(-30deg); */
+}
+.window1 div {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../htb_labs.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.window2 div {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../expressjs_fullstack.png);
+    background-position: center;
+    background-size: cover;
+    transform: scale(100%);
+}
+.window3 {
+    transform-origin: 0% 50%;
+    /* transform: rotateY(30deg); */
+}
+.window3:hover {
+    transform-origin: 0% 50%;
+    transform: rotateY(0deg);
+}
+.window3 div {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../gamedev.jpg);
+    background-position: center;
+    background-size: cover;
 }
 #aboutme {
     border-top: 6px solid var(--green2);
     background: var(--carbon);
+}
+#contact {
+    border-top: 6px solid var(--green2);
+    background: white;
 }
 .whoami {
     display: flex;
@@ -108,7 +142,12 @@ section {
     height: 100vh;
     animation: minibar 1s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
+}
+.aboutLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .profileLayout {
     display: flex;
@@ -121,6 +160,13 @@ section {
     background-image: url(https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCMfzkeYqq_yuXGoC6WZQ4rJdE6gVrBxdsIq26mBC6qdRQl_Oq-5V9SffOGqYVOBvZGUHmt9rgaMxT8qD4dabkhc1AqSw=w1920-h923);
     background-position: 0 0;
     background-size: cover;
+    border: 6px solid var(--green2);
+    animation: pulse 2s infinite;
+    box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.3);
+    /* box-shadow: inset 2px 2px 4px 2px var(--green2); */
+}
+.profileImage {
+    animation
 }
 
 @keyframes activateScroll {
@@ -149,5 +195,20 @@ section {
     }
     100% {
         transform: translate(-50%, -50%) rotateY(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        border: 6px solid var(--green);
+        box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.3);
+    }
+    50% {
+        border: 6px solid rgb(67, 255, 67);
+        box-shadow: 4px 4px 4px 8px rgba(0,0,0,0.3);
+    }
+    100% {
+        border: 6px solid var(--green);
+        box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.3);
     }
 }
