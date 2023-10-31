@@ -131,9 +131,25 @@ section {
     border-top: 6px solid var(--green2);
     background: var(--carbon);
 }
+#education {
+    border-top: 6px solid var(--green2);
+    background: var(--green);
+}
+#skills {
+    border-top: 6px solid var(--green2);
+    background: var(--carbon);
+}
+#projects {
+    border-top: 6px solid var(--green2);
+    background: var(--green);
+}
+#reviews {
+    border-top: 6px solid var(--green2);
+    background: var(--carbon);
+}
 #contact {
     border-top: 6px solid var(--green2);
-    background: white;
+    background: var(--green);
 }
 .whoami {
     display: flex;
@@ -164,9 +180,6 @@ section {
     animation: pulse 2s infinite;
     box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.3);
     /* box-shadow: inset 2px 2px 4px 2px var(--green2); */
-}
-.profileImage {
-    animation
 }
 
 @keyframes activateScroll {
