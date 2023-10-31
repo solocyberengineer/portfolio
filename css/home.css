@@ -1,9 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 :root {
     --carbon: #303030;
     --green: rgb(68,170,85);
-    --shineAlpha: 0.2;
+    --shineAlpha: 0;
 }
 
 #home {
