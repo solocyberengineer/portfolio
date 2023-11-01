@@ -138,13 +138,13 @@ section {
     border-top: 6px solid var(--green2);
     background: var(--green);
 }
+#projects {
+    border-top: 6px solid var(--green2);
+    background: var(--carbon);
+}
 #skills {
     border-top: 6px solid var(--green2);
     background: url(../Skills\ Section.svg), var(--green);
-}
-#projects {
-    border-top: 6px solid var(--green2);
-    background: var(--green);
 }
 #reviews {
     border-top: 6px solid var(--green2);
