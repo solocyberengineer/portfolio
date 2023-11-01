@@ -80,15 +80,16 @@ section {
     background-position: center;
     background-size: cover;
     filter: opacity(100%);
-    /* perspective: 2000px; */
+    /* perspective: 1000px; */
 }
 .slideshow {
     /* background-color: red; */
     align-items: center;
-    /* perspective: 5000px; */
+    /* perspective: 1000px; */
     perspective-origin: 50% 30%;
 }
 [class*='window']{
+    /* position: absolute; */
     transform: rotateY(0deg);
 }
 [class*='window'] div{
@@ -102,6 +103,7 @@ section {
 .window1 {
     transform-origin: 100% 50%;
     /* transform: rotateY(-30deg); */
+    left: 0%;
 }
 .window1 div {
     background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../htb_labs.jpg);
@@ -117,6 +119,7 @@ section {
 .window3 {
     transform-origin: 0% 50%;
     /* transform: rotateY(30deg); */
+    transition: 0.5s;
 }
 .window3:hover {
     transform-origin: 0% 50%;
@@ -137,7 +140,7 @@ section {
 }
 #skills {
     border-top: 6px solid var(--green2);
-    background: var(--carbon);
+    background: url(../Skills\ Section.svg), var(--green);
 }
 #projects {
     border-top: 6px solid var(--green2);
