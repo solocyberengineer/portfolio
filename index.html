@@ -200,44 +200,27 @@
             </section>
             <section class="container-fluid" id="contact">
                 <div class="row h-100">
-                    <div class="col-5 h-100" style="padding-top: 10vh;">
-                        <h1 style="color: white;">Contact</h1>
+                    <div class="col-lg-5 h-100 contact-left-panel">
+                        <h1>Contact</h1>
                         <div class="col h-100 d-flex justify-content-center align-items-center">
-                            <div class="d-flex justify-content-center align-items-center" style="
-                                    /* width: 90%; */
-                                    /* height: 62%; */
-                                    background-image: url(./mail.png);
-                                    aspect-ratio: 100/62;
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                    background-size: cover;
-                                    padding: 40px;">
-                                <h2 class="text-dark" style="
-                                    display: flex;
-                                    flex-flow: column;">
-                                Get in touch <span style="margin-inline: 60px;">
-                                    or to find out more</span></h2>
-                                <!-- <img class="img-fluid" src="./mail.png" alt=""> -->
-                            </div>
+                            <!-- add contact info -->
                         </div>
                     </div>
-                    <div style="
-                        background-color: #6E6A6A;
-                        box-shadow: inset 4px 4px 4px 0px rgba(0,0,0,0.25);
-                        border-top-left-radius: 50px;
-                        border-bottom-left-radius: 50px;
-                        /* padding: 0 !important; */
-                        padding-block: 10px;
-                        padding-left: 10px;
-                        padding-right: 0px;
-                        " 
-                        class="col-7">
-                        <div class="col h-100 w-100" style="
-                            background: var(--green);
-                            border-top-left-radius: 40px;
-                            border-bottom-left-radius: 40px;
-                            box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.4);
-                            "></div>
+                    <div class="col-lg-7 contact-right-panel">
+                        <div class="col h-100 d-flex align-items-center justify-content-center">
+                                <form action="https://formspree.io/f/mqkvwprr" method="POST" return="false">
+                                    <h3 class="display-3 fs-4 text-center p-3 text-white">Send me a message</h3>
+                                    <div class="container form-container d-flex flex-column">
+                                        <input type="text" name="firstName" placeholder="First Name">
+                                        <input type="text" name="lastName" placeholder="Last Name">
+                                        <input type="text" name="email" placeholder="Email">
+                                        <textarea rows="5" cols="30" type="text" name="message" placeholder="Enter you message" style="resize: none;"></textarea>
+                                    </div>
+                                    <div class="groove_btn">
+                                        <button>Send</button>
+                                    </div>
+                                </form>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -154,6 +154,95 @@ section {
     border-top: 6px solid var(--green2);
     background: var(--green);
 }
+.contact-left-panel {
+    padding-top: 10vh;
+}
+.contact-left-panel h1 {
+    color: white;
+}
+.contact-left-panel div div {
+    background-image: url(./mail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    aspect-ratio: 100/62;
+}
+.contact-right-panel {
+    background-color: #6E6A6A;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* padding: 0 !important; */
+    padding-block: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    box-shadow: inset 4px 4px 4px 0px rgba(0,0,0,0.25);                       
+}
+.contact-right-panel div {
+    background: var(--green);
+    border-bottom-left-radius: 40px;
+    box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.4);
+    border-top-left-radius: 40px;
+   
+}
+.contact-right-panel div form {
+    width: 50%;
+}
+.groove_btn {
+    display: flex;
+    justify-content: center;
+    background-color: #6E6A6A !important;
+    margin-inline: auto;
+    margin-block: 50px;
+    width: 22%;
+    border-radius: 6px !important;
+    padding: 4px;
+    box-shadow: inset 1px 1px 4px 0px rgba(0,0,0,0.6) !important;
+}
+.groove_btn button {
+    /* background-color: none; */
+    border: none;
+    width: 100%;
+    padding-block: 8px;
+    border-radius: 3px !important;
+    background-color: var(--green);
+    color: white;
+    font-weight: 600;
+    box-shadow:  2px 2px 4px 0px rgba(0,0,0,0.6) !important;
+    transition: 0.3s;
+}
+.groove_btn button:hover {
+    background-color: rgb(67,216,82);
+}
+.form-container {
+    background-color: rgba(255,255,255,0.2) !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    padding: 20px;
+    /* width: 60%; */
+}
+.form-container > * {
+    padding: 8px;
+    margin-block: 10px;
+    outline: none;
+    border: none;
+    color: rgba(0,0,0,0.5);
+    box-shadow: -2px 2px 2px 0px rgba(0,0,0,0.2);
+}
+.form-container input:nth-child(1) {
+    /* background-color: red; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.form-container textarea {
+    /* background-color: red; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 .whoami {
     display: flex;
     justify-content: center;
@@ -161,7 +250,7 @@ section {
     height: 100vh;
     animation: minibar 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
 }
 .aboutLayout {
     display: flex;
