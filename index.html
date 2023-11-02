@@ -194,8 +194,26 @@
                 </div>
             </section>
             <section class="container-fluid" id="reviews">
-                <div class="row"  style="padding-block: 10vh;">
+                <div class="row text-light d-flex justify-content-center" style="padding-top: 10vh;">
                     <h1 style="color: white;">Reviews</h1>
+                    <!-- <div class="overflow-y-scroll container-fluid"> -->
+                        <div class="row container d-flex justify-content-end" style="margin: 0 !important;">
+                            <div class="col-6">
+                                <div class="review_layout">
+                                    <div class="review_persons_image"></div>
+                                    <div class="review_message_holder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row container d-flex justify-content-start" style="margin: 0 !important;">
+                            <div class="col-6">
+                                <div class="review_left_layout">
+                                    <div class="review_left_persons_image"></div>
+                                    <div class="review_left_message_holder"></div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                 </div>
             </section>
             <section class="container-fluid" id="contact">
@@ -208,18 +226,18 @@
                     </div>
                     <div class="col-lg-7 contact-right-panel">
                         <div class="col h-100 d-flex align-items-center justify-content-center">
-                                <form action="https://formspree.io/f/mqkvwprr" method="POST" return="false">
-                                    <h3 class="display-3 fs-4 text-center p-3 text-white">Send me a message</h3>
-                                    <div class="container form-container d-flex flex-column">
-                                        <input type="text" name="firstName" placeholder="First Name">
-                                        <input type="text" name="lastName" placeholder="Last Name">
-                                        <input type="text" name="email" placeholder="Email">
-                                        <textarea rows="5" cols="30" type="text" name="message" placeholder="Enter you message" style="resize: none;"></textarea>
-                                    </div>
-                                    <div class="groove_btn">
-                                        <button>Send</button>
-                                    </div>
-                                </form>
+                            <form action="https://formspree.io/f/mqkvwprr" method="POST" return="false">
+                                <h3 class="display-3 fs-4 text-center p-3 text-white">Send me a message</h3>
+                                <div class="container form-container d-flex flex-column">
+                                    <input type="text" name="firstName" placeholder="First Name" required>
+                                    <input type="text" name="lastName" placeholder="Last Name" required>
+                                    <input type="text" name="email" placeholder="Email" required>
+                                    <textarea rows="5" cols="30" type="text" name="message" placeholder="Enter you message" style="resize: none;"></textarea>
+                                </div>
+                                <div class="groove_btn">
+                                    <button>Send</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
