@@ -146,6 +146,14 @@ section {
     border-top: 6px solid var(--green2);
     background: url(../Skills\ Section.svg), var(--green);
 }
+#skills div {
+    padding: 10px;
+}
+#skills div div {
+    width: 100%;
+    background-color: white;
+}
+* { border: 1px solid red }
 #reviews {
     border-top: 6px solid var(--green2);
     background: var(--carbon);
@@ -164,22 +172,44 @@ section {
     width: 130px;
     height: 130px;
     background-color: black;
-    background-image: url(../test.png);
+    background-image: url(../rzz.jpg);
     background-position: center;
     background-size: cover;
     border: 2px solid rgba(255,255,255,0.6);
     border-radius: 50%;
     margin: none !important;
+    transition: 200ms;
 }
 .review_message_holder {
     background-color: rgba(255,255,255,0.6);
     margin-top: 50px;
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.6);
+    display: flex !important;
+    align-items: center !important;
+}
+.review_message {
+    position: relative;
+    background-color: #00A355;
+    /* background-image: url(../review_message.svg); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    width: 72%;
+    height: 80%;
+    left: 2%;
+    padding-right: 30px;
+    margin-block: 10px;
+    /* margin: 20px; */
+    /* padding: 100px; */
 }
 .review_right_layout {
     height: 100%;
@@ -208,9 +238,7 @@ section {
     border-bottom-left-radius: 20px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.6);
 }
-*{
-    /* border: 1px solid red; */
-}
+
 #contact {
     border-top: 6px solid var(--green2);
     background: var(--green);
@@ -312,7 +340,7 @@ section {
     height: 100vh;
     animation: minibar 1s;
     animation-fill-mode: forwards;
-    /* animation-delay: 2s; */
+    animation-delay: 2s;
 }
 .aboutLayout {
     display: flex;
