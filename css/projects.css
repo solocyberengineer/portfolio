@@ -1,0 +1,49 @@
+body {
+    background-color: lightseagreen;
+}
+
+::selection {
+    background-color: orangered;
+}
+
+#title {
+    cursor: pointer;
+    position: absolute;
+    /* left: 10%; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 6rem;
+    color: white;
+    /* overflow: hidden; */
+    display: inline-block;
+}
+
+#title::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43%;
+    overflow: hidden;
+    font-size: 6rem;
+    color: #f60042;
+    display: inline;
+    content: "MRBUD";
+    transition: ease 1s width;
+}
+#title:hover::before {
+    width: 100%;
+}
+
+/* 
+sudo elements: content specific munipulation 
+    ::first-letter 
+    ::first-line 
+    ::selection
+
+sudo class: function or an event
+    :active 
+    :hover
+    :first-child
+    :last-child
+    :nth-child(even/odd)
+*/
