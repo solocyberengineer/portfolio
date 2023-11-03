@@ -74,7 +74,7 @@ section {
 }
 #home {
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)), url(https://i.postimg.cc/PfM0nHQM/Macbook-Pro.png); */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(../meonasp.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(https://i.postimg.cc/KvzR6cJ7/meonasp.jpg);
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)); */
     /* height: 100vh; */
     background-position: center;
@@ -119,7 +119,7 @@ section {
     background-size: cover;
 }
 .window2 div {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../expressjs_fullstack.png);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(https://i.postimg.cc/g2hkpxRh/expressjs-fullstack.png);
     background-position: center;
     background-size: cover;
     transform: scale(100%);
@@ -134,7 +134,7 @@ section {
     transform: rotateY(0deg);
 }
 .window3 div {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../gamedev.jpg);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(https://i.postimg.cc/QdcsPRGk/gamedev.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -309,7 +309,7 @@ section {
     width: 130px;
     height: 130px;
     background-color: black;
-    background-image: url(../raja.png);
+    background-image: url(https://i.postimg.cc/SRYH9Mm7/raja.png);
     background-position: center;
     background-size: cover;
     border: 2px solid rgba(255,255,255,0.6);
@@ -319,7 +319,7 @@ section {
 
 }
 #reviews div:nth-child(4) div div:first-child {
-    background-image: url(../gs.jpg);
+    background-image: url(https://i.postimg.cc/KjXhJNqs/gs.jpg);
     background-position: 0 0;
 }
 .review_left_layout {
@@ -329,11 +329,11 @@ section {
     background: var(--green2) !important;
 }
 #reviews div:nth-child(5) div div:first-child {
-    background-image: url(../joel2.jpg);
+    background-image: url(https://i.postimg.cc/TY7CxwGT/joel2.jpg);
     background-position: 0 0;
 }
 #reviews div:nth-child(6) div div:first-child {
-    background-image: url(../kezpet.jpg);
+    background-image: url(https://i.postimg.cc/Qt3qmKgJ/kezpet.jpg);
     background-position: 0 0;
 }
 .review_left_message_holder {
