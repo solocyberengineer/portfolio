@@ -171,7 +171,8 @@ section {
 #projects {
     border-top: 6px solid var(--green2);
     background: var(--carbon);
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 10vh;
 }
 #skills {
     border-top: 6px solid var(--green2);
@@ -237,6 +238,7 @@ section {
     border-radius: 50%;
     margin: none !important;
     transition: 200ms;
+    z-index: 1;
 }
 .review_message_holder {
     background-color: rgba(255,255,255,0.6);
@@ -286,9 +288,25 @@ section {
     border: 2px solid rgba(255,255,255,0.6);
     border-radius: 50%;
     margin: none !important;
+    z-index: 1;
+
 }
 #reviews div:nth-child(4) div div:first-child {
     background-image: url(../gs.jpg);
+    background-position: 0 0;
+}
+.review_left_layout {
+    background: none !important;
+}
+.review_left_message {
+    background: var(--green2) !important;
+}
+#reviews div:nth-child(5) div div:first-child {
+    background-image: url(../joel2.jpg);
+    background-position: 0 0;
+}
+#reviews div:nth-child(6) div div:first-child {
+    background-image: url(../kezpet.jpg);
     background-position: 0 0;
 }
 .review_left_message_holder {
@@ -389,6 +407,29 @@ section {
 .groove_btn button:hover {
     background-color: rgb(67,216,82);
 }
+.contact_details {
+    padding-block: 100px;
+    color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: center;
+    padding-inline: 0 !important;
+}
+.social_media {
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 2rem;
+    padding: 10px;
+    list-style: none;
+}
+.social_media li {
+    margin-inline: 10px;
+}
+.social_media li img {
+    width: 50px;
+    height: 50px;
+}
 
 .form-container {
     background-color: rgba(255,255,255,0.2) !important;
@@ -445,8 +486,8 @@ section {
     background-position: 0 0;
     background-size: cover;
     border: 6px solid var(--green2);
-    animation: pulse 2s infinite;
-    box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.3);
+    /* animation: pulse 2s infinite; */
+    /* box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.3); */
     /* box-shadow: inset 2px 2px 4px 2px var(--green2); */
 }
 
