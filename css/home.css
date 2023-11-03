@@ -74,7 +74,7 @@ section {
 }
 #home {
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)), url(https://i.postimg.cc/PfM0nHQM/Macbook-Pro.png); */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../htb.png);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://i.postimg.cc/y8hgcjVv/htb.png);
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)); */
     /* height: 100vh; */
     background-position: center;
@@ -96,7 +96,7 @@ section {
 [class*='window'] div{
     border-radius: 10px;
     /* background-color: var(--green2); */
-    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5 ) ), url(../htb.png);
+    /* background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5 ) ), url(https://i.postimg.cc/y8hgcjVv/htb.png); */
     background-size: cover;
     background-position: center;
     /* border: 1px solid var(--green2); */
@@ -107,7 +107,7 @@ section {
     left: 0%;
 }
 .window1 div {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../htb_labs.jpg);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(https://i.postimg.cc/TY5Gz3Fb/htb-labs.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -139,11 +139,30 @@ section {
 #education {
     border-top: 6px solid var(--green2);
     /* background: var(--green); */
-    background-image: url(../frequency_timeline.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    /* background-image: url(../frequency_timeline.svg); */
+    /* background-size: contain; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* height: 100vh; */
+}
+#education svg {
+    /* height: 100%; */
+    margin-bottom: 30vh;
+    margin-top: 10vh;
+    width: 100%;
+    object-fit: contain;
+}
+#matric {
+    cursor: pointer;
+    fill: white;
+    transition: 0.2s;
+}
+#matric:hover {
+    fill: var(--green2);
+}
+#education svg circle:hover {
+    cursor: pointer;
+    fill: var(--green2);
 }
 #projects {
     border-top: 6px solid var(--green2);
@@ -153,6 +172,9 @@ section {
 #skills {
     border-top: 6px solid var(--green2);
     background: url(../Skills\ Section.svg), var(--green);
+    background-repeat: no-repeat;
+    background-size: 100% 170%;
+    background-position: center;
 }
 #skills h1 {
     /* height: 10%; */
@@ -170,13 +192,13 @@ section {
 }
 .skill_table {
     display: grid;
-    grid-template-columns: repeat(5, calc(100% / 5));
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, calc(100% / 4));
+    grid-template-rows: repeat(6, auto);
 }
 .skill_table img {
-    /* width: 40px; */
-    /* height: 40px; */
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
     object-fit: contain;
 }
 /* * { border: 1px solid red } */
@@ -198,7 +220,7 @@ section {
     width: 130px;
     height: 130px;
     background-color: black;
-    background-image: url(../rzz.jpg);
+    background-image: url(https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAkdb2FcRzr7YP4RzuHFv9_xtJkICXFNqkvxAqSoM1yYOwnxDLJHGML3EDcOES22axUwojsAOB4yjG79IqkbNyoFDbLxQ=w1920-h923);
     background-position: center;
     background-size: cover;
     border: 2px solid rgba(255,255,255,0.6);
