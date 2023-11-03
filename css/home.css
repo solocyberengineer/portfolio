@@ -145,6 +145,10 @@ section {
     /* background-repeat: no-repeat; */
     /* height: 100vh; */
 }
+#education h1 {
+    position: sticky;
+    top: 10vh;
+}
 #education svg {
     /* height: 100%; */
     margin-bottom: 30vh;
@@ -184,22 +188,28 @@ section {
 #skills div {
     /* padding: 10px; */
     height: 90%;
-
-}
-#skills div div {
-    width: 100%;
-    /* background-color: yellow; */
+    background-color: none;
 }
 .skill_table {
     display: grid;
     grid-template-columns: repeat(4, calc(100% / 4));
     grid-template-rows: repeat(6, auto);
+    /* perspective: 1000px; */
+    /* transition: 300ms; */
 }
-.skill_table img {
-    width: 100%;
-    height: 100%;
+
+.skill_table div img {
     padding: 50px;
-    object-fit: contain;
+}
+.sec_img {
+    position: absolute;
+    transform: translateY(-100%);
+    display: none;
+    transition: opacity 400ms;
+}
+.skill_table div:hover .sec_img {
+    /* background-color: red; */
+    display: block;
 }
 /* * { border: 1px solid red } */
 #reviews {
@@ -208,7 +218,7 @@ section {
 }
 .review_layout {
     height: 100%;
-    /* background-color: rgba(255,255,255,0.6); */
+    background: none !important;
     /* background-color: black; */
     /* padding-top: 50px; */
 }
@@ -239,10 +249,11 @@ section {
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.6);
     display: flex !important;
     align-items: center !important;
+    justify-content: start;
 }
 .review_message {
     position: relative;
-    background-color: #00A355;
+    background: #00A355 !important;
     /* background-image: url(../review_message.svg); */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
@@ -269,22 +280,49 @@ section {
     width: 130px;
     height: 130px;
     background-color: black;
-    background-image: url(../test.png);
+    background-image: url(../raja.png);
     background-position: center;
     background-size: cover;
     border: 2px solid rgba(255,255,255,0.6);
     border-radius: 50%;
     margin: none !important;
 }
+#reviews div:nth-child(4) div div:first-child {
+    background-image: url(../gs.jpg);
+    background-position: 0 0;
+}
 .review_left_message_holder {
     background-color: rgba(255,255,255,0.6);
     margin-top: 50px;
     width: 100%;
-    height: 150px;
-    border-top-right-radius: 20px;
+    /* height: 150px; */
+    border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.6);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: end;
+
+}
+.review_left_message {
+    position: relative;
+    background-color: #00A355;
+    /* background-image: url(../review_message.svg); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    width: 72%;
+    height: 80%;
+    right: 2%;
+    padding-left: 30px;
+    margin-block: 10px;
+    /* margin: 20px; */
+    /* padding: 100px; */
 }
 
 #contact {
@@ -434,10 +472,10 @@ section {
 
 @keyframes rotate3d {
     0% {
-        transform: translate(-50%, -50%) rotateY(0deg);
+        transform: rotateY(0deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotateY(360deg);
+        transform: rotateY(70deg);
     }
 }
 
