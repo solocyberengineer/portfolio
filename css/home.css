@@ -74,7 +74,7 @@ section {
 }
 #home {
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)), url(https://i.postimg.cc/PfM0nHQM/Macbook-Pro.png); */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://i.postimg.cc/y8hgcjVv/htb.png);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(../meonasp.jpg);
     /* background: linear-gradient(to bottom, var(--green), rgba(0,0,0,0.2)); */
     /* height: 100vh; */
     background-position: center;
@@ -83,6 +83,7 @@ section {
     height: 100vh;
     /* perspective: 1000px; */
 }
+
 .slideshow {
     /* background-color: red; */
     align-items: center;
@@ -100,6 +101,12 @@ section {
     background-size: cover;
     background-position: center;
     /* border: 1px solid var(--green2); */
+    height: 50vh;
+}
+@media screen and (max-width: 900px) {
+    [class*='window'] div {
+        height: 20vh;
+    }
 }
 .window1 {
     transform-origin: 100% 50%;
