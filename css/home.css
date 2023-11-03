@@ -103,7 +103,7 @@ section {
     /* border: 1px solid var(--green2); */
     height: 50vh;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     [class*='window'] div {
         height: 20vh;
     }
@@ -141,7 +141,8 @@ section {
 #aboutme {
     border-top: 6px solid var(--green2);
     background: var(--carbon);
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 10vh;
 }
 #education {
     border-top: 6px solid var(--green2);
@@ -156,12 +157,21 @@ section {
     position: sticky;
     top: 10vh;
 }
+#education div {
+    padding-block: 10vh;
+}
 #education svg {
     /* height: 100%; */
     margin-bottom: 30vh;
     margin-top: 10vh;
     width: 100%;
     object-fit: contain;
+}
+@media screen and (max-width: 1000px) {
+    #education svg {
+        height: 100%;
+        object-fit: cover !important;
+    }
 }
 #matric {
     cursor: pointer;
@@ -202,10 +212,20 @@ section {
     display: grid;
     grid-template-columns: repeat(4, calc(100% / 4));
     grid-template-rows: repeat(6, auto);
-    /* perspective: 1000px; */
-    /* transition: 300ms; */
 }
 
+@media screen and (max-width: 1000px) {
+    #skills {
+        background-size: cover;
+    }
+    .skill_table {
+        grid-template-columns: repeat(1, calc(100% / 1));
+        grid-template-rows: repeat(20, auto);
+    }
+}
+.skill_table div {
+    margin-inline: auto;
+}
 .skill_table div img {
     padding: 50px;
 }
